@@ -40,24 +40,27 @@ var stackNodo = /** @class */ (function () {
     }
     return stackNodo;
 }());
+var arr = [1, 2, 3, 4];
+var pila2 = new stack();
 var pila = new stack();
 console.log(pila); //stack { head: null, size: 0 }
+//pila.pop();
 var nodo1 = new stackNodo(1);
 console.log(nodo1); //stackNodo { value: 1, next: null, prev: null }
-var nodo2 = new stackNodo(2);
+var nodo2 = new stackNodo("Miguel");
 console.log(nodo2);
-var nodo3 = new stackNodo(3);
+var nodo3 = new stackNodo(pila2);
 console.log(nodo3);
+var nodo4 = new stackNodo(arr);
+console.log(nodo4);
 pila.push(nodo1);
 console.log(pila); //stack { head: stackNodo { value: 1, next: null, prev: null }, size: 1 }
 pila.push(nodo2);
 console.log(pila);
 pila.push(nodo3);
 console.log(pila);
-//console.log(JSON.stringify(pila));
+pila.push(nodo4);
+console.log(pila);
+console.log(JSON.stringify(pila));
 console.log(pila.pop());
 console.log(pila);
-// {"head":{"value":3,"prevn":
-//     {"value":2,"prevn":
-//         {"value":1,"prevn":null}}},
-//         "size":3}
