@@ -1,0 +1,11 @@
+{
+  "name": "stack",
+  "version": "1.0.0",
+  "description": "Implementación de la estructura de dato \"pila/stack\"",
+  "main": "stack.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Miguel Anjel Salazar Jaramillo",
+  "license": "ISC"
+}

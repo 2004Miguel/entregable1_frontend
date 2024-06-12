@@ -52,10 +52,10 @@ let arr = [1, 2, 3, 4];
 let pila2 = new stack();
 
 let pila = new stack();
-console.log(pila);//stack { head: null, size: 0 }
-//pila.pop();
+console.log(pila);
+pila.pop();
 let nodo1 = new stackNodo(1);
-console.log(nodo1);//stackNodo { value: 1, next: null, prev: null }
+console.log(nodo1);
 let nodo2 = new stackNodo("Miguel");
 console.log(nodo2);
 let nodo3 = new stackNodo(pila2);
@@ -63,7 +63,7 @@ console.log(nodo3);
 let nodo4 = new stackNodo(arr);
 console.log(nodo4);
 pila.push(nodo1);
-console.log(pila);//stack { head: stackNodo { value: 1, next: null, prev: null }, size: 1 }
+console.log(pila);
 pila.push(nodo2);
 console.log(pila);
 pila.push(nodo3);
